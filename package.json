@@ -1,5 +1,5 @@
 {
-  "name": "hotel",
+  "name": "hotelpartay",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,11 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.18",
-    "@heroicons/react": "^2.1.1",
-    "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "next": "14.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
