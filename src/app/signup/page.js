@@ -1,8 +1,9 @@
+import Link from "next/link";
 export default function Signup() {
     return (
         <>
             <div className="flex">
-            <div class="w-1/2 hidden sm:block">
+                <div class="w-1/2 hidden sm:block">
                     <img src="\signup\welcome.jpg" alt="Your Photo" className="object-cover w-full h-screen" />
                 </div>
 
@@ -37,7 +38,10 @@ export default function Signup() {
                         <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mb-2">Sign Up</button>
                         <div className="mt-10">
                             <p>If you already have a log in...</p>
-                        <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mb-2">Click Here!</button>
+                            <Link href="/signin">
+                                <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mb-2">Click Here!
+                                </button>
+                            </Link>
                         </div>
                     </form>
                 </div>
