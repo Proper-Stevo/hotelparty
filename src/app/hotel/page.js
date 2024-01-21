@@ -8,8 +8,7 @@ export default function Home() {
     return (
       <>
       <HotelHero />
-      <Hotel2Column imagePos="right" />
-      <Hotel2Column imagePos="left" />
+      <Hotel2Column  />
       <HotelAmenities />
       <HotelBookNow />
       <HotelContactUs />
