@@ -3,10 +3,10 @@ import Image from "next/image";
 export default function Homepage() {
   return (
     <>
-      <div className="container p-8 mx-auto xl:px-0 flex flex-wrap ">
+      <div className="container p-8 my-16 mx-auto xl:px-0 flex flex-wrap">
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8 mx-8">
-            <h1 className="text-center text-sky-500 text-[46px] font-bold font-['Nunito']">
+            <h1 className="text-center pb-4 text-sky-500 text-[46px] font-bold font-['Nunito']">
               Unleash Your Inner Traveller
             </h1>
             <p className="pb-8 text-center text-white text-opacity-80 text-2xl font-medium font-['Nunito']">
@@ -24,39 +24,34 @@ export default function Homepage() {
                 Start Search
               </a>
             </div>
+            <div className="flex  my-3 justify-center  sm:items-center sm:flex-row">
+              <p
+                className="text-white text-center text-opacity-60 text-2xl font-medium font-['Roboto']"
+              >
+                Already have an account?
+              </p>
+              <a
+                href="https://web3templates.com/templates/nextly-landing-page-template-for-startups"
+                target="_blank"
+                rel="noopener"
+                className="text-xl font-medium text-center ml-2 text-sky-400"
+              >
+                Login
+              </a>
+            </div>
           </div>
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2">
-          <div className="w-[636px] h-[709px] bg-sky-500 rounded-full">
+          <div className="w-[636px] h-[621px] bg-sky-500 rounded-full">
             <Image
               src="/assets/homepage_hero_desktop.png"
               width="621"
-              height="709"
-              className="w-[621px] h-[709px] rounded-full"
+              height="621"
+              className="w-[621px] h-[621px]  rounded-full"
               alt="Hero Illustration"
               loading="eager"
             />
           </div>
-          {/* <div className="w-[636px] h-[709px] bg-sky-500 rounded-full">
-            <Image
-              src="/assets/homepage_hero_desktop.png"
-              width="621"
-              height="709"
-              className="w-[621px] h-[709px] rounded-full"
-              alt="Hero Illustration"
-              loading="eager"
-            />
-          </div>
-          <div className="w-[636px] h-[709px] bg-sky-500 rounded-full">
-            <Image
-              src="/assets/homepage_hero_desktop.png"
-              width="621"
-              height="709"
-              className="w-[621px] h-[709px] rounded-full"
-              alt="Hero Illustration"
-              loading="eager"
-            />
-          </div> */}
         </div>
       </div>
     </>
