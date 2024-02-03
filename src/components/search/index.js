@@ -1,26 +1,4 @@
-"use client"
-import { useEffect } from "react";
-
 function index() {
-  useEffect(() => { });
-  const plusme_search = (el) => {
-    let currentValue = parseInt(
-      el.target.parentElement.parentElement.children[2].innerText
-    );
-
-    el.target.parentElement.parentElement.children[2].innerText =
-      currentValue + 100;
-  };
-  const minusme_search = (el) => {
-    let currentValue = parseInt(
-      el.target.parentElement.parentElement.children[2].innerText
-    );
-    if (currentValue > 0) {
-      el.target.parentElement.parentElement.children[2].innerText =
-        currentValue - 100;
-    }
-  };
-
   return (
     <>
       <div>
