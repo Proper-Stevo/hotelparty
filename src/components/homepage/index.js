@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link"
 
 export default function Homepage() {
   return (
@@ -15,14 +16,12 @@ export default function Homepage() {
             </p>
 
             <div className="flex flex-col  justify-center space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
-              <a
-                href="https://web3templates.com/templates/nextly-landing-page-template-for-startups"
-                target="_blank"
-                rel="noopener"
+              <Link
+                href="/search"
                 className=" px-28 py-2 text-xl font-medium text-center text-white bg-sky-500 rounded-[59.18px] "
               >
                 Start Search
-              </a>
+              </Link>
             </div>
             <div className="flex  my-3 justify-center  sm:items-center sm:flex-row">
               <p
@@ -30,14 +29,12 @@ export default function Homepage() {
               >
                 Already have an account?
               </p>
-              <a
-                href="https://web3templates.com/templates/nextly-landing-page-template-for-startups"
-                target="_blank"
-                rel="noopener"
+              <Link
+                href="/signin"
                 className="text-xl font-medium text-center ml-2 text-sky-400"
               >
                 Login
-              </a>
+              </Link>
             </div>
           </div>
         </div>
