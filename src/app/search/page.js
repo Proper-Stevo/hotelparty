@@ -16,7 +16,9 @@ export default function search() {
             <div className="grid grid-cols-3">
                 <div>
                     <Image
-                    src=""
+                    src="/search/hotel.jpg"
+                    width={300}
+                    height={300}
                     >
 
                     </Image>
@@ -26,4 +28,4 @@ export default function search() {
             </div>
         </>
     )
-}
+} 
